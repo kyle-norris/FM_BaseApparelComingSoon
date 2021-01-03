@@ -1,0 +1,11 @@
+@import 'config';
+@import 'home';
+
+body {
+    height: 100vh;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: $font-weight-low;
+}

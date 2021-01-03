@@ -1,0 +1,104 @@
+
+.home {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    &__right {
+        background:
+            url(../../Starter_Files/images/hero-desktop.jpg)
+            top center;
+        background-size: cover;
+        width: 40%;
+    }
+
+    &__left {
+        width: 60%;
+        background:
+            url(../../Starter_Files/images/bg-pattern-desktop.svg)
+            top center;
+        background-size: cover;
+        
+    }
+
+    &__logo {
+        display:flex;
+        align-items: center;
+        justify-content: left;
+        margin-left: 15rem;
+        margin-top: 5rem;
+
+        img {
+            width: 10rem;
+            height: auto;
+        }
+    }
+
+    &__title-secondhalf {
+        color: $neutral-darkred;
+        font-weight: 400;
+    }
+
+    &__title {
+        margin-left: 15rem;
+        margin-right: 10rem;
+        margin-top: 10rem;
+        word-spacing:100rem;
+        letter-spacing: 1.5rem;
+        margin-bottom: 1.5rem;
+
+        h1 {
+            color: $primary-desaturated-red;
+        }
+    }
+
+    &__bio {
+        font-size: 1.2rem;
+        margin-left: 15rem;
+        width: 34rem;
+        font-weight: 600;
+        line-height: 2rem;
+        color: $primary-desaturated-red;
+    }
+
+}
+
+.email-form {
+    margin-left: 15rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    
+    input[type=text] {
+        border: 1px solid $primary-desaturated-red;
+        border-radius: 2rem;
+        width: 33rem;
+        height: 4rem;
+        padding-left: 2rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $primary-desaturated-red;
+        &::placeholder {
+            color: $primary-desaturated-red;
+        }
+        
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button[type=submit] {
+        width: 7rem;
+        border: none;
+        border-radius: 2rem;
+        position: relative;
+        left: -80px;
+        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.09);
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
