@@ -26,7 +26,9 @@
               <img src="Starter_Files/images/logo.svg" alt="Base Apparel">
             </header>
 
-            <div class="home__mobile_picture"></div>
+            <div class="home__mobile-picture">
+              <img class="mobile" src="/Starter_Files/images/hero-mobile.jpg"></img>
+            </div>
 
             <div class="home__title">
                 <h1>WE'RE <span class="home__title-secondhalf">COMING SOON</span></h1>
@@ -37,9 +39,9 @@
                 Add your email below to stay up-to-date with announcements and our launch deals.
             </p>
 
-            <form action="GET" class="email-form">
-              <input type="text" placeholder="Email Address">
-              <button type="submit" class="email-form__btn">
+            <form class="email-form" name="email-form">
+              <input type="text" id="email" name="email" placeholder="Email Address" required>
+              <button type="submit" class="email-form__btn" onclick="ValidateEmail(document.email-form.email)">
                 <img src="Starter_Files/images/icon-arrow.svg" alt="Submit">
               </button>
             </form>
@@ -54,7 +56,11 @@
       Coded by <a href="#">Kyle Norris</a>.
     </p>
   </footer>
+
+  <script src="dist/js/email-validation.js"></script>
 </body>
+
+
 
 
 </html>

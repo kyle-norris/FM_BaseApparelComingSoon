@@ -18,15 +18,19 @@
             url(../../Starter_Files/images/bg-pattern-desktop.svg)
             top center;
         background-size: cover;
+        display: flex;
+        flex-direction: column;
         
     }
 
     &__logo {
-        display:flex;
-        align-items: center;
-        justify-content: left;
-        margin-left: 15rem;
-        margin-top: 5rem;
+        display: flex;
+        height: 20%;
+        margin-left: 20%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        align-items: flex-end;
 
         img {
             width: 10rem;
@@ -40,12 +44,14 @@
     }
 
     &__title {
-        margin-left: 15rem;
-        margin-right: 10rem;
-        margin-top: 10rem;
+        display: flex;
+        align-items: flex-end;
+        height: 40%;
+        margin-left: 20%;
         word-spacing:100rem;
         letter-spacing: 1.5rem;
         margin-bottom: 1.5rem;
+        margin-top: 1rem;
 
         h1 {
             color: $primary-desaturated-red;
@@ -54,7 +60,7 @@
 
     &__bio {
         font-size: 1.2rem;
-        margin-left: 15rem;
+        margin-left: 20%;
         width: 34rem;
         font-weight: 600;
         line-height: 2rem;
@@ -64,7 +70,7 @@
 }
 
 .email-form {
-    margin-left: 15rem;
+    margin-left: 20%;
     display: flex;
     flex-direction: row;
     margin-top: 3rem;
@@ -98,6 +104,10 @@
 
         &:focus {
             outline: none;
+        }
+
+        &:hover {
+            cursor: pointer;
         }
     }
 }

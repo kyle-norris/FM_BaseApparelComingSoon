@@ -1,11 +1,13 @@
 @import 'config';
 @import 'home';
+@import 'responsive';
 
 body {
     height: 100vh;
 }
 
 h1 {
-    font-size: 5rem;
     font-weight: $font-weight-low;
+    font-size: 5rem;
 }
+
