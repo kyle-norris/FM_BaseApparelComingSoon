@@ -79,25 +79,31 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 3rem;
-
-    &__error-img {
-        height: 2rem;
-        position: relative;
-        left: -240px;
-        top: 15px;
-        opacity: 0;
-    }
+    flex-wrap: wrap;
+    max-width: 45rem;
+    align-items: center;
+    justify-content: center;
 
     &__row {
         display: flex;
         flex-direction: row;
+        width: 100%;
+        justify-content: center;
     }
 
     &__row-error {
-        margin-left: 2rem;
+        justify-content: center;
+        position: relative;
+        left: -3rem;
         margin-top: 0.5rem;
-        color: $primary-soft-red;
         font-weight: 300;
+        height: 2rem;
+    }
+
+    &__error {
+        opacity: 0;
+        color: $primary-soft-red;
+        font-weight: 600;
     }
     
     input[type=text] {
@@ -134,6 +140,14 @@ body {
         &:hover {
             cursor: pointer;
         }
+    }
+
+    &__error-img {
+        height: 2rem;
+        position: relative;
+        left: -240px;
+        top: 15px;
+        opacity: 0;
     }
 
 

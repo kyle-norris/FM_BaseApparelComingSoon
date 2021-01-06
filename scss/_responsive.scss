@@ -105,6 +105,14 @@
                 outline: none;
             }
         }
+
+        &__error-img {
+            height: 1.5rem;
+            position: relative;
+            left: -8rem;
+            top: 15px;
+            opacity: 0;
+        }
     }
     
 }
