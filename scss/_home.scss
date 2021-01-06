@@ -1,8 +1,13 @@
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .home {
     display: flex;
     flex-direction: row;
-    height: 100%;
+    height: 100vh;
 
     &__right {
         background:
@@ -25,10 +30,10 @@
 
     &__logo {
         display: flex;
-        height: 20%;
+        height: 10%;
         margin-left: 20%;
-        margin-top: 0;
-        margin-bottom: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         margin-right: 0;
         align-items: flex-end;
 
@@ -46,7 +51,7 @@
     &__title {
         display: flex;
         align-items: flex-end;
-        height: 40%;
+        height: 40vh;
         margin-left: 20%;
         word-spacing:100rem;
         letter-spacing: 1.5rem;
@@ -72,8 +77,28 @@
 .email-form {
     margin-left: 20%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 3rem;
+
+    &__error-img {
+        height: 2rem;
+        position: relative;
+        left: -240px;
+        top: 15px;
+        opacity: 0;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__row-error {
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+        color: $primary-soft-red;
+        font-weight: 300;
+    }
     
     input[type=text] {
         border: 1px solid $primary-desaturated-red;
@@ -110,5 +135,6 @@
             cursor: pointer;
         }
     }
-}
 
+
+}

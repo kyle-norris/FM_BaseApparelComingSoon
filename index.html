@@ -20,47 +20,45 @@
 
 <body>
 
-    <div class="home">
-        <div class="home__left">
-            <header class="home__logo">
-              <img src="Starter_Files/images/logo.svg" alt="Base Apparel">
-            </header>
 
-            <div class="home__mobile-picture">
-              <img class="mobile" src="Starter_Files/images/hero-mobile.jpg"></img>
-            </div>
+  <div class="home">
+    <div class="home__left">
+        <header class="home__logo">
+          <img src="Starter_Files/images/logo.svg" alt="Base Apparel">
+        </header>
 
-            <div class="home__title">
-                <h1>WE'RE <span class="home__title-secondhalf">COMING SOON</span></h1>
-            </div>
-
-            <p class="home__bio">
-                Hello fellow shoppers! We're currently building our new fashion store. 
-                Add your email below to stay up-to-date with announcements and our launch deals.
-            </p>
-
-            <form class="email-form" name="email-form">
-              <input type="text" id="email" name="email" placeholder="Email Address" required>
-              <button type="submit" class="email-form__btn" onclick="ValidateEmail(document.email-form.email)">
-                <img src="Starter_Files/images/icon-arrow.svg" alt="Submit">
-              </button>
-            </form>
+        <div class="home__mobile-picture">
+          <img class="mobile" src="Starter_Files/images/hero-mobile.jpg"></img>
         </div>
 
-        <div class="home__right"></div>
+        <div class="home__title">
+            <h1>WE'RE <span class="home__title-secondhalf">COMING SOON</span></h1>
+        </div>
+
+        <p class="home__bio">
+            Hello fellow shoppers! We're currently building our new fashion store. 
+            Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+
+        <form class="email-form" name="email-form" onsubmit="return validateForm()">
+          <div class="email-form__row">
+            <input type="text" name="email" placeholder="Email Address">
+            <button type="submit" class="email-form__btn"">
+              <img src="Starter_Files/images/icon-arrow.svg" alt="Submit">
+            </button>
+            <img src="Starter_Files/images/icon-error.svg" alt="error" id="error-img" class="email-form__error-img">
+          </div>
+          <div class="email-form__row-error">
+            <label for="email" id="email-form__error"></label>
+          </div>
+        </form>
     </div>
+
+    <div class="home__right"></div>
+  </div>
   
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Kyle Norris</a>.
-    </p>
-  </footer>
 
   <script src="dist/js/email-validation.js"></script>
 </body>
-
-
-
 
 </html>
